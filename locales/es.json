@@ -1,0 +1,123 @@
+{
+    "meta": {
+      "title": "Vox Obscura | Artista de Doblaje",
+      "description": "Talento fresco de doblaje especializado en narración, anuncios y voces en off con una estética de fantasía oscura."
+    },
+    "nav": {
+      "about": "Sobre mí",
+      "voiceSamples": "Muestras de voz",
+      "funFacts": "Curiosidades",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "title": "VOX OBSCURA",
+      "subtitle": "Artista de Doblaje • Narrador • Especialista en Anuncios",
+      "cta": "Escucha mi trabajo",
+      "scrollDown": "Desplázate hacia abajo"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Soy una voz fresca en la industria con pasión por dar vida a historias y mensajes. Aunque soy nuevo en el doblaje profesional, aporto un entusiasmo ilimitado, un sonido único y una dedicación para entregar exactamente lo que necesitas.",
+      "stats": {
+        "fresh": {
+          "value": "Fresh",
+          "label": "Nueva perspectiva",
+          "description": "Aportando un sonido contemporáneo y un enfoque innovador a cada proyecto"
+        },
+        "turnaround": {
+          "value": "24hr",
+          "label": "Entrega rápida",
+          "description": "Entrega rápida sin comprometer la calidad"
+        },
+        "rates": {
+          "value": "$",
+          "label": "Tarifas competitivas",
+          "description": "Calidad profesional sin el precio premium"
+        }
+      }
+    },
+    "voiceSamples": {
+      "title": "Muestras de voz",
+      "description": "Escucha selecciones de mi portafolio que muestran la amplitud y profundidad de mis interpretaciones vocales.",
+      "samples": {
+        "narrative": {
+          "title": "Demo de narración oscura",
+          "character": "Narrador",
+          "project": "Muestra de audiolibro"
+        },
+        "commercial": {
+          "title": "Doblaje comercial",
+          "character": "Voz de marca",
+          "project": "Anuncio"
+        },
+        "documentary": {
+          "title": "Estilo documental",
+          "character": "Narrador",
+          "project": "Contenido informativo"
+        },
+        "promo": {
+          "title": "Anuncio promocional",
+          "character": "Locutor",
+          "project": "Promo de evento"
+        }
+      }
+    },
+    "funFacts": {
+      "title": "Curiosidades y peculiaridades",
+      "description": "Conoce a la persona detrás del micrófono. Aquí hay algunos datos curiosos sobre mí y mi trayectoria en el doblaje.",
+      "facts": {
+        "chameleon": {
+          "title": "Camaleón vocal",
+          "description": "¡Puedo cambiar entre narrador sensual, locutor enérgico y explicador tranquilo en segundos!"
+        },
+        "powered": {
+          "title": "Funciono con",
+          "description": "Dos tazas de té, una barra de chocolate y una obsesión poco saludable con videos de entrenamiento vocal."
+        },
+        "record": {
+          "title": "Tiempo récord",
+          "description": "Mi entrega más rápida fue de 3 horas para un comercial de 2 minutos. ¡El cliente lo necesitaba para ayer!"
+        },
+        "studio": {
+          "title": "Configuración del estudio",
+          "description": "Mi cabina de grabación fue construida con mantas móviles y tubos de PVC. No es bonita, ¡pero suena genial!"
+        },
+        "tongue": {
+          "title": "Trabalenguas",
+          "description": "Practico con 'Tres tristes tigres tragaban trigo en un trigal' cada mañana. Todavía no puedo hacerlo bien."
+        },
+        "why": {
+          "title": "¿Por qué el doblaje?",
+          "description": "Me enamoré del doblaje después de que me dijeran que tenía 'voz de radio' mientras pedía en un autoservicio."
+        }
+      }
+    },
+    "contact": {
+      "title": "Ponte en contacto",
+      "description": "¿Interesado en trabajar juntos? Contáctame para discutir tu proyecto y cómo puedo dar vida a tu mensaje con mi voz.",
+      "info": {
+        "title": "Información de contacto",
+        "email": "contact@voxobscura.com",
+        "tiktok": "@vox_obscura",
+        "instagram": "@vox_obscura"
+      },
+      "pricing": {
+        "title": "Precios",
+        "startingAt": "Desde $10 para proyectos cortos",
+        "customQuotes": "Presupuestos personalizados para trabajos más largos",
+        "discounts": "Descuentos para colaboraciones continuas"
+      },
+      "cta": "Envíame un email"
+    },
+    "footer": {
+      "copyright": "© 2025 Vox Obscura. Todos los derechos reservados.",
+      "tiktok": "TikTok",
+      "instagram": "Instagram"
+    },
+    "backToTop": "Volver arriba",
+    "language": {
+      "en": "English",
+      "uk": "Українська",
+      "es": "Español"
+    }
+  }

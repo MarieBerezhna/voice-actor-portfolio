@@ -7,12 +7,16 @@ import Link from "next/link"
 import { Mountain } from "lucide-react"
 import { scrollToSection } from "@/utils/scroll-utils"
 import MobileMenu from "@/components/ui/mobile-menu"
+import LanguageSwitcher from "@/components/ui/language-switcher"
+import { useLanguage } from "@/contexts/language-context"
 
 interface HeaderProps {
   scrolled: boolean
 }
 
 export default function Header({ scrolled }: HeaderProps) {
+  const { translations } = useLanguage()
+
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault()
     scrollToSection(sectionId)
@@ -33,47 +37,50 @@ export default function Header({ scrolled }: HeaderProps) {
         >
           <Link href="/" className="flex items-center gap-2">
             <Mountain className="h-6 w-6" />
-            <span>MORGAN BLACKWOOD</span>
+            <span>VOX OBSCURA</span>
           </Link>
         </motion.div>
 
-        <motion.nav
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="hidden md:flex space-x-8"
-        >
-          <Link
-            href="#about"
-            className="text-gray-300 hover:text-purple-300 transition-colors"
-            onClick={(e) => handleNavClick(e, "about")}
+        <div className="flex items-center gap-4">
+          <motion.nav
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="hidden md:flex space-x-8"
           >
-            About
-          </Link>
-          <Link
-            href="#voice-samples"
-            className="text-gray-300 hover:text-purple-300 transition-colors"
-            onClick={(e) => handleNavClick(e, "voice-samples")}
-          >
-            Voice Samples
-          </Link>
-          <Link
-            href="#projects"
-            className="text-gray-300 hover:text-purple-300 transition-colors"
-            onClick={(e) => handleNavClick(e, "projects")}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#contact"
-            className="text-gray-300 hover:text-purple-300 transition-colors"
-            onClick={(e) => handleNavClick(e, "contact")}
-          >
-            Contact
-          </Link>
-        </motion.nav>
+            <Link
+              href="#about"
+              className="text-gray-300 hover:text-purple-300 transition-colors"
+              onClick={(e) => handleNavClick(e, "about")}
+            >
+              {translations.nav.about}
+            </Link>
+            <Link
+              href="#voice-samples"
+              className="text-gray-300 hover:text-purple-300 transition-colors"
+              onClick={(e) => handleNavClick(e, "voice-samples")}
+            >
+              {translations.nav.voiceSamples}
+            </Link>
+            <Link
+              href="#fun-facts"
+              className="text-gray-300 hover:text-purple-300 transition-colors"
+              onClick={(e) => handleNavClick(e, "fun-facts")}
+            >
+              {translations.nav.funFacts}
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-300 hover:text-purple-300 transition-colors"
+              onClick={(e) => handleNavClick(e, "contact")}
+            >
+              {translations.nav.contact}
+            </Link>
+          </motion.nav>
 
-        <MobileMenu />
+          <LanguageSwitcher />
+          <MobileMenu />
+        </div>
       </div>
     </header>
   )

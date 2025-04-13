@@ -1,11 +1,11 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { LanguageProvider } from "@/contexts/language-context"
 
 export const metadata = {
-  title: "Morgan Blackwood | Voice Actor",
-  description: "Professional voice actor specializing in dark fantasy, horror, and dramatic narratives.",
-    generator: 'v0.dev'
+  title: "Vox Obscura | Voice Over Artist",
+  description: "Fresh voice over talent specializing in narration, ads, and voice overs with a dark fantasy aesthetic.",
 }
 
 export default function RootLayout({
@@ -16,13 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body className="min-h-screen bg-gray-950 font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+            {children}
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   )
 }
-
-
-import './globals.css'
